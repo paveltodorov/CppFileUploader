@@ -1,0 +1,4 @@
+{
+    "transferApiUrl": "https://testserver.moveitcloud.com/api/v1",
+    "tokenRefreshBufferSeconds": 30
+}

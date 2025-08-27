@@ -23,6 +23,10 @@ set(SOURCES
     src/main.cpp
     src/ApiClient.cpp
     src/Token.cpp
+    src/UserManager.cpp
+    src/Queue.cpp
+    src/Config.cpp
+    src/User.cpp
 )
 
 add_executable(file_uploader ${SOURCES})
