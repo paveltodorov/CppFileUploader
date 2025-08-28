@@ -21,10 +21,15 @@ Dependencies:
 Build & Run:
 
 git clone https://github.com/paveltodorov/CppFileUploader.git
+
 cd CppFileUploader
+
 mkdir build && cd build
+
 cmake ..
+
 make
+
 ./file_uploader
 
 ------------------------------------------------------
@@ -87,22 +92,19 @@ sudo apt-get install libcurl4-openssl-dev
 Future improvements
 ------------------
 
-Thread Pool & Concurrency
-
+- Thread Pool & Concurrency;
 Currently, upload tasks are processed serially.
 Using a fixed-size thread pool and a thread-safe queue would allow multiple requests to be handled concurrently.
-Retry Mechanism & Exponential Backoff
+
+- Retry Mechanism & Exponential Backoff;
 Implementing retries for failed uploads with exponential backoff would make the system more robust to network/API failures.
 
-Batch Uploads
-
+- Batch Uploads;
 If multiple files need to be uploaded at once, batching could reduce network overhead and improve efficiency.
 
-Token Revocation
-
+- Token Revocation;
 Tokens could be revoked on application shutdown for improved security, though current implementation relies on token expiry.
 
-Scalability
-
+- Scalability;
 For larger user bases, caching, connection pooling, and more advanced concurrency mechanisms (e.g., lock-free queues) could be considered.
 
